@@ -1,0 +1,8 @@
+.movieForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .movieForm > * {
+    width: 100%;
+  }
