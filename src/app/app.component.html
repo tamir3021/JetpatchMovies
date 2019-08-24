@@ -7,6 +7,18 @@
     <mat-card>
       <button mat-button color="primary" (click)="addMovie()">Add movie</button>
     </mat-card>
+    <mat-card>
+       <!-- <mat-grid-list [cols]="3" rowHeight="2:1">
+      <mat-grid-tile *ngFor="let movie of movies">
+        <movie-container [movie]="movie" [masterBgColor]="masterBgColor"></movie-container>
+      </mat-grid-tile>
+    </mat-grid-list> -->
+     <ul class="moviesContainers">
+       <li *ngFor="let movie of movies">
+          <movie-container [movie]="movie" [masterBgColor]="masterBgColor"></movie-container>
+       </li>
+     </ul>
+    </mat-card>
   </main>
 </div>
 

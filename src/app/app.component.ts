@@ -13,7 +13,7 @@ import { MovieContainer } from './interfaces/MovieContainer';
 export class AppComponent {
   title = 'jetpatch-assignment';
   movies: MovieContainer[] = [];
-  masterBackgroundColor: string;
+  masterBgColor = '#8286d9';
 
   constructor(public dialog: MatDialog) {
 
@@ -27,14 +27,14 @@ export class AppComponent {
           this.movies.push({
             name: movieData.name,
             link: movieData.link,
-            overrideBgColor: this.masterBackgroundColor
+            overrideBgColor: this.masterBgColor
           });
           console.log(this.movies);
         }
       });
   }
 
-  editMasterBackgroundColor() {
+  editMasterBgColor() {
 
   }
 }

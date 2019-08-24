@@ -1,0 +1,13 @@
+<mat-card [ngStyle]="{'background-color': overrideBgColor ? overrideBgColor : masterBgColor}">
+    <mat-card-content>
+        <mat-form-field>
+            <input matInput
+                [(colorPicker)]="pickerColor"
+                [value]="pickerColor"
+                (colorPickerChange)="pickerColor=$event;updateOverrideBgColor($event)"
+               />
+        </mat-form-field>
+        <h3>{{movie.name}}</h3>
+        <h3>{{movie.link}}</h3>
+    </mat-card-content>
+</mat-card>

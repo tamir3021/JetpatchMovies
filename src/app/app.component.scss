@@ -1,0 +1,12 @@
+ul {
+    list-style: none;
+}
+.moviesContainers {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    > li {
+        margin-bottom: 50px;
+    }
+}
