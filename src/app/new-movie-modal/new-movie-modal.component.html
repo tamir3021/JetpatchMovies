@@ -1,27 +1,29 @@
 <h1 mat-dialog-title>Add movie</h1>
-<form mat-dialog-content class="movieForm">
-    <mat-form-field>
-        <input
-            matInput
-            type="text"
-            name="name"
-            placeholder="Movie name"
-            [(ngModel)]="movie.name"
-            #name="ngModel"
-            required
-           >    
-    </mat-form-field>
-    <mat-form-field>
-        <input
-            matInput
-            type="text"
-            name="link"
-            placeholder="Movie IMDB link"
-            [(ngModel)]="movie.link"
-            #link="ngModel"
-            required
-           >    
-    </mat-form-field>
+<form>
+    <div mat-dialog-content class="movieForm">
+        <mat-form-field>
+            <input
+                matInput
+                type="text"
+                name="name"
+                placeholder="Movie name"
+                [(ngModel)]="movie.name"
+                #name="ngModel"
+                required
+               >    
+        </mat-form-field>
+        <mat-form-field>
+            <input
+                matInput
+                type="text"
+                name="link"
+                placeholder="Movie IMDB link"
+                [(ngModel)]="movie.link"
+                #link="ngModel"
+                required
+               >    
+        </mat-form-field>
+    </div>
     <div mat-dialog-actions class="modalButtons">
         <button mat-button color="primary"
             [disabled]="name.invalid || link.invalid"

@@ -20,7 +20,7 @@ export class AppComponent {
   }
 
   addMovie () {
-    const dialogRef = this.dialog.open(NewMovieModalComponent, {width: '50%'});
+    const dialogRef = this.dialog.open(NewMovieModalComponent, {width: '50%', height: '50%'});
     dialogRef.afterClosed()
       .subscribe((movieData: Movie) => {
         if(movieData && movieData.name) {
