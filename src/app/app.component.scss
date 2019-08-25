@@ -1,12 +1,35 @@
 ul {
     list-style: none;
 }
+.header {
+    display: flex;
+    flex-flow: row wrap;
+
+    input {
+        font-size: 16px;
+        text-align: center;
+        width: 200px;
+    }
+
+    .masterColorText {
+        font-size: 20px;
+        line-height: 40px;
+        margin-right: 50px;
+    }
+    .addMovieBtn {
+        height: 40px;
+        margin-left: auto;
+    }
+}
 .moviesContainers {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: left;
 
     > li {
-        margin-bottom: 50px;
+        margin: 0 50px 50px 0;
+        width: 300px;
+        overflow-wrap: break-word;
+        text-align: left;
     }
 }

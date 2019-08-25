@@ -4,8 +4,14 @@
     Welcome to {{ title }}!
   </h1>
   <main class="mainAppArea">
-    <mat-card>
-      <button mat-button color="primary" (click)="addMovie()">Add movie</button>
+    <mat-card class="header">
+      <label class="masterColorText">Master color background:</label>
+      <input matInput
+      [(colorPicker)]="masterBgColor"
+      [value]="masterBgColor"
+      [style.background]="masterBgColor"
+      />
+      <button mat-raised-button color="primary" class="addMovieBtn" (click)="addMovie()">Add movie</button>
     </mat-card>
     <mat-card>
        <!-- <mat-grid-list [cols]="3" rowHeight="2:1">
